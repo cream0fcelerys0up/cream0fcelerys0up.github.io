@@ -1,33 +1,23 @@
-
-this is page1
-test complete 77
-
-
 <!DOCTYPE html>
 <html>
 <body>
 
-<h1>My First Web Page</h1>
-<p>My First Paragraph</p>
+<p>Click the button to demonstrate the prompt box.</p>
+
+<button onclick="myFunction()">Try it</button>
 
 <p id="demo"></p>
 
-<script type="text/javascript">
-  var test1 = promt("enter text");
-  alert("testingtesting")
-  alert(test1);
+<script>
+function myFunction() {
+  var person = prompt("Please enter your name", "Harry Potter");
+  if (person != null) {
+    document.getElementById("demo").innerHTML =
+    "Hello " + person + "! How are you today?";
+  }
+}
 </script>
-
 
 </body>
 </html>
 
-test1
-<!--
-<form>
-  First name:<br>
-  <input type="text" name="firstname"><br>
-  Last name:<br>
-  <input type="text" name="lastname">
-</form>
--->
