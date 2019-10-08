@@ -10,14 +10,29 @@
 
 <script>
 function myFunction() {
-  var person = prompt("Please enter your name", "Harry Potter");
+  var person = prompt("enter to chat:", "");
   if (person != null) {
-    document.getElementById("demo").innerHTML =
-    "Hello " + person + "! How are you today?";
+    document.getElementById("demo").innerHTML = "Hello " + person + "! How are you today?";
+    var x = person;
+    const fs = require('fs');
+      
+    // Data which will write in a file. 
+    let data = "well";
+      
+    // Write data in 'Output.txt' . 
+    fs.writeFile('Output.txt', data, (err) => { 
+          
+        // In case of a error throw err. 
+        alert("didn't work");
+        if (err) throw err; 
+        
+    })
   }
 }
+
 </script>
 
 </body>
 </html>
+
 
