@@ -6,6 +6,24 @@
     test
   </head>
   <body>
-    <p>Please follow <a href="//celerysoup.me/page1/">this link</a>.</p>
+    <p>Please follow <a href="//celerysoup.me/page1/">Enter Chat</a>.</p>
   </body>
+  
+  <button onclick="myFunction()">Sign In</button>
+  
+  <p id="username"></p>
+  <p id="password"></p>
+  
+  <script>
+    function myFunction() {
+      var username = prompt("enter to chat:", "");
+      if (username != null) {
+        document.getElementById("demo").innerHTML = username
+      }
+      var password = prompt("enter to chat:", "");
+      if(password != null) {
+        document.getElementById("password").innerHTML = password
+      }
+    }
+  </script>
 </html>
